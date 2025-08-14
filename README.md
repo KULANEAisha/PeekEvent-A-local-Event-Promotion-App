@@ -1,10 +1,9 @@
-PeekEvent
+<h1 align="center"><b>PeekEvent</b></h1> <p align="center"><i>Connecting communities through hyperlocal event discovery and promotion</i></p> <hr>
 
-Connecting communities through hyperlocal event discovery and promotion
+PeekEvent is a mobile application designed to bridge the gap between local event organizers and community members in Kenya.
+Built with a mobile-first approach, it democratizes event promotion by providing an accessible platform for discovering, creating, and coordinating local events.
 
-PeekEvent is a mobile application designed to bridge the gap between local event organizers and community members in Kenya. Built with a mobile-first approach, it democratizes event promotion by providing an accessible platform for discovering, creating, and coordinating local events.
-
-Features
+📌 Features
 For Event Attendees
 
 Hyperlocal Discovery – Find events happening in your area
@@ -25,7 +24,7 @@ Event Management – Edit or delete your created events
 
 Media Support – Add images to make events more appealing
 
-Core Functionality
+⚙️ Core Functionality
 
 User Authentication – Secure Firebase-based login system
 
@@ -33,7 +32,7 @@ Real-time Updates – Live synchronization across all users
 
 Mobile-Optimized – Designed specifically for smartphones
 
-Getting Started
+🚀 Getting Started
 Prerequisites
 
 Android Studio Arctic Fox or later
@@ -48,7 +47,7 @@ Installation
 git clone https://github.com/yourusername/peekevent.git
 cd peekevent
 
-Firebase Setup
+🔧 Firebase Setup
 
 Create a new Firebase project in the Firebase Console
 
@@ -67,13 +66,13 @@ Database Rules
   }
 }
 
-Build and Run
+▶️ Build and Run
 ./gradlew assembleDebug
 
 
 Or open in Android Studio and click Run.
 
-Architecture
+🏛 Architecture
 
 PeekEvent follows a three-tier architecture:
 
@@ -92,7 +91,7 @@ Data Management: EventAdapter, RSVPManager
 
 Firebase Services: Realtime Database, Authentication, Storage
 
-Database Schema
+📂 Database Schema
 
 Users Collection
 
@@ -141,16 +140,16 @@ RSVP Collection
   }
 }
 
-Technology Stack
+💻 Technology Stack
 Component	Technology
 Frontend	Android (Java/Kotlin)
 UI Framework	XML Layouts
-Backend Database	Firebase Realtime Database
+Database	Firebase Realtime Database
 Authentication	Firebase Auth
 Storage	Firebase Storage
 Version Control	Git
 IDE	Android Studio
-Development Setup
+📁 Development Setup
 
 Project Structure
 
@@ -175,7 +174,7 @@ implementation 'com.google.firebase:firebase-storage'
 implementation 'androidx.recyclerview:recyclerview'
 implementation 'com.github.bumptech.glide:glide'
 
-Contributing
+🤝 Contributing
 
 We welcome contributions to PeekEvent!
 
@@ -189,9 +188,9 @@ Push to the branch (git push origin feature/amazing-feature)
 
 Open a Pull Request
 
-License
+📜 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-Screenshots
+📸 Screenshots
 <p align="center"> <img src="https://github.com/user-attachments/assets/1102794d-d336-489b-bb04-af0f4875094f" width="200" /> <img src="https://github.com/user-attachments/assets/083c6bfb-8cfd-45be-9518-da9ddc47eb2a" width="200" /> <img src="https://github.com/user-attachments/assets/c8067a03-ddfa-4cb6-bcec-b9361c77c48a" width="200" /> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/8d7fd33e-930d-4a81-8c11-1b9f4b7c3464" width="200" /> <img src="https://github.com/user-attachments/assets/6656662a-cadd-479e-adf2-dc8b7e736929" width="200" /> <img src="https://github.com/user-attachments/assets/0ca422c6-61f6-4c1d-84d0-bb55f7353a3a" width="200" /> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/dc9a1fc6-9368-4419-8949-c704f7572c5c" width="200" /> <img src="https://github.com/user-attachments/assets/8880b52c-9d9f-46e4-91eb-50ff4ec47d2e" width="200" /> <img src="https://github.com/user-attachments/assets/e60a949c-6d19-4c98-9d00-dba9c406e3a4" width="200" /> </p>
