@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Welcome_page">
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/peek_logo2"
+            android:contentDescription="App logo"
+            android:elevation="10dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/txtAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.20"
+            android:text="PeekEvent"
+            android:textColor="@color/lavender"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/txtSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover And Connect"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:letterSpacing="0.02"
+            android:fontFamily="sans-serif" />
+
+        <!-- Get Started Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetStarted"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="Get Started"
+            android:textColor="@color/lavender"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/outlined_button"
+            android:elevation="@null"
+            android:stateListAnimator="@null" />
+
+        <!-- Sign In Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignIn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:backgroundTint="@color/lavender"
+            android:elevation="6dp"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="30dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PeekEvent Project</string>
+
+    <string name="header_title">PeekEvent</string>
+    <string name="header_subtitle">Discover events near you</string>
+    <string name="search_hint">Search events...</string>
+    <string name="category_all">All</string>
+    <string name="category_music">Music</string>
+    <string name="category_art">Art</string>
+    <string name="category_technology">Technology</string>
+    <string name="category_food">Food</string>
+    <string name="category_sports">Sports</string>
+    <!-- Add these new strings for the Create Event form -->
+    <string name="create_new_event">Create New Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_title_hint">Enter event title</string>
+    <string name="event_category">Event Category</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_description_hint">Write your event description</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_date_hint">DD/MM/YY</string>
+    <string name="event_time">Event Time</string>
+    <string name="event_time_hint">HH:MM AM</string>
+    <string name="location">Location</string>
+    <string name="location_hint">Location</string>
+    <string name="tukatune_zone">Tukatune Zone</string>
+    <string name="event_image">Event Image</string>
+    <string name="no_file_chosen">📁 No File Chosen</string>
+
+</resources>

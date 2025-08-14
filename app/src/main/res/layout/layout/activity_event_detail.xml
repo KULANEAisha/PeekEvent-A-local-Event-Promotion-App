@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailActivity"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/detail_event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Event Image -->
+            <ImageView
+                android:id="@+id/detail_event_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/eventimg"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/detail_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/detail_event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Location -->
+            <TextView
+                android:id="@+id/detail_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Zone -->
+            <TextView
+                android:id="@+id/detail_event_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Going Count -->
+            <TextView
+                android:id="@+id/detail_going_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Going"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/detail_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Description"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- RSVP Button -->
+            <Button
+                android:id="@+id/rsvp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RSVP"
+                android:backgroundTint="@color/lavender"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+

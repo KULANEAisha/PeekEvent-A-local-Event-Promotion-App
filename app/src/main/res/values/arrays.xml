@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_categories">
+        <item>@string/category_all</item>
+        <item>@string/category_music</item>
+        <item>@string/category_art</item>
+        <item>@string/category_technology</item>
+        <item>@string/category_food</item>
+        <item>@string/category_sports</item>
+    </string-array>
+</resources>

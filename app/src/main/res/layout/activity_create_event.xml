@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CreateEventActivity">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_gradient"
+        android:elevation="6dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="36dp">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗓 Create New Event"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.07"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- Bottom Navigation (DECLARED FIRST TO FIX REFERENCE ISSUE) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/selector_nav_item_color"
+        app:itemTextColor="@color/selector_nav_item_color" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_container"
+        android:layout_above="@id/bottom_nav"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- All your input fields and buttons remain unchanged -->
+
+            <!-- Event Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/event_title_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter event title"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Event Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Category"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/event_category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_spinner"
+                android:layout_marginBottom="20dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/event_categories" />
+
+            <!-- Event Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Description"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/event_description_input"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Write your event description"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Event Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/event_date_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="DD/MM/YY"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="20dp" />
+
+
+
+            <!-- Event Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Time"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/event_time_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Select Event Time"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableStart="@drawable/clock"
+                android:drawablePadding="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/location_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Location"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Tukatune Zone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tukatune Zone"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/tukatune_zone_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint=""
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Attendee Count -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendee Count"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/attendee_count_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="e.g. 100"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Event Image -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Image"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/eventImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_photo"
+                android:layout_margin="16dp" />
+
+
+
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Create Event"
+                android:backgroundTint="@color/lavender"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
